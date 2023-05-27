@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bloc">
+        <div class="card">
+            <form>
+                <select name="" id="">
+                    <option value="FR CFA">XOF</option>
+                </select>
+                <input type="number" id="montant" placeholder="Mon">
+                <select name="" id="device" >
+                    <option value="USD">BTC</option>
+                    <option value="XOF">XOF</option>
+                    <option value="EURO">EURO</option>
+                </select>
+                <button type="button" id="btn">Convertir</button>
+
+            </form>
+        </div>
+
+        <div class="list">
+            <p>BTC: <span class="btc"></span></p>
+            <p>EURO: <span class="euro"></span></p>
+            <p>USD: <span class="usd"></span></p>
+        </div>
+
+    </div>
+    
+
+    <script type="module" src="/asset/js/script.js"></script>
+</body>
+</html>
