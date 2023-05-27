@@ -16,14 +16,14 @@ $("form").on("click", (e)=>{
 $("#btn").on("click", ()=>{
     let montant = $("#montant").val();
     $.getJSON(url, function (data) {
+        let euro = 0.0015
         console.log(data)
         console.log(montant)
-        $(".btc").text(`${data.BTC* parseInt(montant)}`)
-        $(".euro").text(`${data.EURO* parseInt(montant)}`)
-        $(".usd").text(`${data.USD* parseInt(montant)}`)
+        $(".btc").text(`${data.BTC* parseInt(montant)} BTC`)
+        $(".euro").text(`${parseInt(montant)/parseInt(euro)}`)
+        $(".usd").text(`${data.USD* parseInt(montant)} $`)
     });
 })
-
 
 })
 

@@ -28,3 +28,9 @@ button{
 form{
 display: block;
 }
+.list{
+    display: flex;
+}
+p{
+    width: 15rem;
+}
